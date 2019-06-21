@@ -1,0 +1,20 @@
+1	Blair Rothermel	8.8	4.0	4.5	5.5	 	 	 	 	 	14.0
+2	Mike Marchlik	9.9	2.0	6.0	5.5	 	 	 	 	 	13.5
+3	Andrew Smith	4.8	1.0	6.0	4.5	 	 	 	 	 	11.5
+ 	George Piotrowski	8.7	0.0	5.5	6.0	 	 	 	 	 	11.5
+5	Bob Terzyk	7.4	6.0	4.0	1.0	 	 	 	 	 	11.0
+6	Jim Cotter	4.5	5.0	0.0	4.5	 	 	 	 	 	9.5
+7	Tim Comparri	12.0	4.0	1.5	3.5	 	 	 	 	 	9.0
+8	Dan Suiter	7.9	5.0	0.0	3.0	 	 	 	 	 	8.0
+ 	Dick Ditullio	24.6	2.0	6.0	0.0	 	 	 	 	 	8.0
+10	James Bridgers	6.2	6.0	0.0	1.5	 	 	 	 	 	7.5
+11	Craig Lewis	3.9	6.0	1.0	0.0	 	 	 	 	 	7.0
+ 	Rich Kirsten	7.6	1.0	0.0	6.0	 	 	 	 	 	7.0
+13	Milt McFalls	14.4	6.0	0.0	0.0	 	 	 	 	 	6.0
+ 	Rich Rupolo	16.2	5.0	0.0	1.0	 	 	 	 	 	6.0
+15	Mark Steele	11.1	3.0	2.5	0.0	 	 	 	 	 	5.5
+16	Paul Hessler	7.6	0.0	0.0	5.0	 	 	 	 	 	5.0
+ 	Ed Tomasch	10.4	0.0	5.0	0.0	 	 	 	 	 	5.0
+18	Dave Distasio	7.0	0.0	2.0	0.0	 	 	 	 	 	2.0
+19	Ray Simons	13.2	0.0	0.0	1.0	 	 	 	 	 	1.0
+

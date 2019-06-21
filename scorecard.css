@@ -1,0 +1,14 @@
+.leaderboard TD {font-family:Verdana,Arial,Helvetica; font-size:9px; font-weight:bold; }
+.leaderboard TH {font-family:Verdana,Arial,Helvetica; font-size:9px; font-weight:bold; }
+.ace { background-color : #BBD8D8; font-family:Verdana,Arial,Helvetica; font-size:10px; font-weight:bold; }
+.eag { background-color : #A75151; font-family:Verdana,Arial,Helvetica; font-size:10px; font-weight:bold; }
+.bir { background-color : #8A9C99; font-family:Verdana,Arial,Helvetica; font-size:10px; font-weight:bold; }
+.bog { background-color : #E2CA94; font-family:Verdana,Arial,Helvetica; font-size:10px; font-weight:bold; }
+.dbo { background-color : #DCA07A; font-family:Verdana,Arial,Helvetica; font-size:10px; font-weight:bold; }
+.outline  { background-color : #DBDBDB; }
+// .headA { font-size:13px; font-weight:bold; font-family:Arial, Helvetica, sans-serif; color:#FFFFF0; background-color : #295B8F;}
+.headA { font-size:13px; font-weight:bold; font-family:Arial, Helvetica, sans-serif; color:#000000; background-color : #C1C1C1;}
+
+.headB { background-color : #C1C1C1; }
+.headC { background-color : #CCCCCC; }
+.data { background-color : #F2F2F2; }

@@ -1,0 +1,49 @@
+georgepio@symbolic-wind-126022:~$ history
+    1  gsutil
+    2  gsutil setmeta -h "Cache-Control:public, max-age=30" *.*
+    3  dir
+    4  pwd
+    5  ls -la
+    6  gsutil setmeta -h "Cache-Control:public, max-age=30" gs://bucket/cscgolf.gapiojr.biz/2018/*.*
+    7  ls -la gs://bucket
+    8  ls -la gs://buckets
+    9  ls -la gs://bucket/
+   10  ls -la gs://Buckets/
+   11  history
+   12  ls -la gs://cscgolf.gapiojr.biz
+   13  ls -la gs://cscgolf.gapiojr.biz/
+   14  gsutil setmeta -h "Cache-Control:public, max-age=30" gs://bucket/*.*
+   15  gcloud init
+   16  gloud
+   17  gcloud
+   18  gcloud --help
+   19  cd /Buckets
+   20  dir
+   21  ls -la
+   22  dir /
+   23  gcsfuse
+   24  gsutil --help
+   25  ls -l s-la
+   26  ls -la
+   27  gsutil help
+   28  gsutil ls gs://cscgolf.gapiojr.biz/
+   29  gsutil ls gs://cscgolf.gapiojr.biz/2018/*.htm*
+   30  gsutil acl ch -u AllUsers:R gs://cscgolf.gapiojr.biz/2018/*
+   31  gsutil setmeta -h "public, max-age=30" gs://cscgolf.gapiojr.biz/2018/*.htm*
+   32  gsutil setmeta -h ""Cache-Control:public, max-age=30" gs://cscgolf.gapiojr.biz/2018/*.htm*
+   33  gsutil setmeta -h "Cache-Control:public, max-age=30" gs://cscgolf.gapiojr.biz/2018/*.htm*
+   34  history
+   
+
+    1  history
+    2  help
+    3  gsutil acl ch -u AllUsers:R gs://cscgolf.gapiojr.biz/2019/*
+    4  gsutil -m acl ch -u AllUsers:R gs://cscgolf.gapiojr.biz/2019/*
+    5  gsutil setmeta -h "public, max-age=30" gs://cscgolf.gapiojr.biz/2019/*.htm*
+    6  gsutil setmeta -h "Cache-Control:public, max-age=30" gs://cscgolf.gapiojr.biz/2019/*.htm*
+    7  gsutil -m setmeta -h "Cache-Control:public, max-age=30" gs://cscgolf.gapiojr.biz/2019/*.htm*
+    8  dir
+    9  gsutil -m setmeta -h "Cache-Control:public, max-age=30" gs://cscgolf.gapiojr.biz/index.html
+   10  gsutil -m acl ch -u AllUsers:R gs://cscgolf.gapiojr.biz/index.html
+   11  history
+

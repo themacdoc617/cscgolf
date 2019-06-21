@@ -1,0 +1,155 @@
+<html>
+<head>
+<title>CSCGL07 Handicap Calculator</title>
+<script type="text/javascript"><!--
+window.onload = resizeWindow;
+function resizeWindow() {
+window.moveTo(40,40);
+top.window.resizeTo(400,630);
+}
+
+// -->
+</script>
+</head>
+<body>
+<script language="javascript">
+<!--
+
+function courseHcp(gender,hcpidx) {
+  var chcp, tdiff, tslope;
+  if ( gender == "Female" ){
+    tslope = this.wslope;
+    tdiff  = this.wdiff();
+  } else {
+    tslope = this.slope;
+    tdiff  = 0;
+  }
+  //alert("slope = " + tslope + "  diff = " + tdiff);
+  chcp = Math.round((hcpidx * tslope)/113) + tdiff;
+  return chcp;
+}
+
+function womendiff() {
+  var diff = this.wcr - this.cr;
+  if( diff < 0 )
+	diff = Math.floor(diff);
+  else
+	diff = Math.round(diff);
+
+  return diff
+}
+
+function course(slope,cr,wslope,wcr) {
+  this.slope = slope;
+  this.cr    = cr;
+  this.wslope = wslope;
+  this.wcr    = wcr;
+  this.wdiff = womendiff;
+  this.chcp   = courseHcp;
+}
+
+//var slopes = new array();
+var Red   = new course(128,36.0,128,36.5);
+var White = new course(126,35.2,120,35.3);
+var Blue  = new course(128,34.9,123,34.4);
+var WilFront = new course(121,34.7,118,34.2);
+var WilBack  = new course(127,34.8,118,34.2);
+var isccFront = new course(120,34.6,119,35.3);
+var isccBack  = new course(122,34.5,110,34.3);
+//alert("hi");
+
+function computeHcp() {
+  var i, hcpidx, course, gender;
+  
+  hcpidx = document.hcpcalc.hcpidx.value;
+  //i = document.hcpcalc.course.selectedIndex;
+  //course = document.hcpcalc.course.options[document.hcpcalc.course.selectedIndex].value;
+  gender = document.hcpcalc.gender[document.hcpcalc.gender.selectedIndex].value;
+
+  //course = document.hcpcalc.course.value;
+  //gender = document.hcpcalc.gender[document.hcpcalc.gender.selectedindex];
+  //alert("course = " + course + "  gender = " + gender);
+
+  //document.hcpcalc.chcp.value = slopes[gender, course];
+  //alert("hi " + Blue.wdiff() + " " + Math.round(Blue.wdiff()) );
+  //alert("hi "+ i + " " + Red.wdiff() + " " + White.wdiff() + " " + Blue.wdiff() );
+  //var tmp = eval(course);
+  //alert("course.slope = " + tmp.slope);
+  //var j = tmp.chcp(gender,hcpidx);
+  //alert(j);
+  //document.hcpcalc.chcp.value = tmp.chcp(gender,hcpidx);
+  document.hcpcalc.redchcp.value = Red.chcp(gender,hcpidx);
+  document.hcpcalc.whitechcp.value = White.chcp(gender,hcpidx);
+  document.hcpcalc.bluechcp.value = Blue.chcp(gender,hcpidx);
+  
+	document.hcpcalc.wilfrontchcp.value = WilFront.chcp(gender,hcpidx);
+	document.hcpcalc.wilbackchcp.value = WilBack.chcp(gender,hcpidx);
+
+	document.hcpcalc.isccfrontchcp.value = isccFront.chcp(gender,hcpidx);
+	document.hcpcalc.isccbackchcp.value = isccBack.chcp(gender,hcpidx);
+
+}
+
+//-->
+</script>
+<form name="hcpcalc">
+<table>
+<tr>
+<td>Handicap Index: </td>
+<td><input name="hcpidx" type=text size=10></td>
+</tr>
+<!--<tr>
+<td>Course: </td>
+<td><select name="course">
+<option value="Red">Red</option>
+<option value="White">White</option>
+<option value="Blue">Blue</option>
+</select></td>
+</tr>--><tr>
+<td>Gender: </td>
+<td><select name="gender">
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+</select></td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr>
+<td colspan=2 align=center><input type=button value="Compute" onclick="computeHcp();"></td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr>
+<td colspan=2 align=center>Course Handicap: 
+<table>
+<tr>
+<td>Red</td><td>White</td><td>Blue</td></tr>
+<tr>
+<td><input type=text size=5 name="redchcp" disabled></td>
+<td><input type=text size=5 name="whitechcp" disabled></td>
+<td><input type=text size=5 name="bluechcp" disabled></td>
+</tr><tr>
+<td colspan=3 align=center>Willowbrook</td>
+</tr><tr>
+<td>Front</td><td>Back</td><td>&nbsp;</td>
+</tr><tr>
+<td><input type=text size=5 name="wilfrontchcp" disabled></td>
+<td><input type=text size=5 name="wilbackchcp" disabled></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td colspan=3 align=center>Indian Spring</td>
+</tr><tr>
+<td>Front</td><td>Back</td><td>&nbsp;</td>
+</tr><tr>
+<td align=center><input type=text size=5 name="isccfrontchcp" disabled></td>
+<td align=center><input type=text size=5 name="isccbackchcp" disabled></td>
+<td>&nbsp;</td>
+</tr></table>
+</td><tr>
+<td colspan=2>&nbsp;</td>
+</tr>
+</table>
+
+
+
+</body>
+</html>
+
