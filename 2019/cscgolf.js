@@ -300,5 +300,8 @@ function glWeeks(heading, half, currweek, currdone, startdate, weektypes, summ, 
 	this.getLabel = getLabel;
 }
 
+function cardWindow(cardfile) {
+    window.open("images/" + cardfile, "_blank", "toolbar=no, scrollbars=yes, resizable=yes, top=50, left=50, width=400, height=600");
+}
 
 //</script>
