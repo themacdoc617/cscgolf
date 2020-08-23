@@ -295,7 +295,7 @@ function glWeeks(heading, half, currweek, currdone, startdate, weektypes, summ, 
 	//alert(">>" + this.weektypes);
 	this.getWeeks = getWeeks;
 	this.getSumm = getSumm;
-	this.schprefix = "gl19_";
+	this.schprefix = "gl20_";
 	this.holidays = holidays;
 	this.getLabel = getLabel;
 }
